@@ -129,14 +129,8 @@ def recommend_movies_for_user(user_id, X, movie_mapper, movie_inv_mapper, k):
 
 X, user_mapper, movie_mapper, user_inv_mapper, movie_inv_mapper = create_matrix(ratings_df)
 
-# movie_titles = dict(zip(movies_df['movieId'], movies_df['title']))
- 
-# movie_id = 3
- 
-# similar_ids = find_similar_movies(movie_id, X, k=10)
-# movie_title = movie_titles[movie_id]
 
-    
+
 user_id = 150  # user scelto per la recommendation 
 recommend_movies_for_user(user_id, X, movie_mapper, movie_inv_mapper, k=10)
 
